@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #0b143d;
+    
+    color: white;
+
+
+    font-family: 'Montserrat';
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-wrapper {
+    background: url('/x.jpg');
+    background-position: center;
+    background-size: auto;
+    height: 40ch;
+    background-position-y: -35ch;
+
+    
+   
+   
+}
+.hero-content {
+    text-align: center;
+    margin: 7em;
+    
+
+}
+
+
+.wrapper {      /* padding photo ke upaar wale pic ke text teekh karne keliya */
+    padding: 1.5em;
+    max-width: 250em;
+   
+    margin: 0 auto;
+
+    
+
+  
+
+
+
+
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+   
+ 
+    
+}
+
+.logo {
+    font-weight: bold ;
+}
+
+ul.top-list {
+    display: flex;
+    
+    
+}
+
+li a {    /* home about speration */
+    padding: 0.6em;
+}
+
+
+.light-purple-wrapper {
+    background: #031c50;
+}
+
+.stats {
+    display:grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    justify-content: space-around;
+    margin-top: 0.5em;
+
+}
+.stats li {
+    margin-bottom: 1.5em;
+}
+.stats li strong {
+    font-size: 1.4em;
+}
+
+.stats li span {
+    display: block; /*display font it own block*/
+    text-transform: uppercase;
+    font-size: .75em;
+}
+
+.arrows {
+    display: none;
+}
+
+.extended-wrapper {
+    padding: 0 1.5em 2em;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.carousal {
+    margin-bottom: 1em;
+}
+
+ul.carousal li {
+    background: #274068;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+blockquote {
+    margin: 0;
+    font-size: .8em;
+    line-height: 1.8em;
+    margin-bottom: 1em;
+}
+
+cite {
+    color: #24bad4;
+    font-weight: bold;
+    font-size: .8em;
+    font-style: normal;
+    position: relative ;
+
+    padding-left: 25px;
+}
+
+cite::before {
+    content: "  ";
+
+    position: absolute;
+    left: 0;
+    top: 6px;
+    height: 1px;
+    width: 20px;
+    border-bottom: 1px solid white;
+}
+
+
+h2 {
+    text-align: center;
+    position: relative;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 30px;
+    background: #B728DC;
+}
+
+
+
+@media (min-width:650px) {
+    body {
+        font-size: 18px;
+    }
+
+    .wrapper {
+        padding: 1.5em 4em;
+        
+    }
+    .carousal-container {
+        display: flex;
+    }
+    .arrows{
+        display: block;
+        width: 40px;
+        cursor: pointer;
+        margin: .5em;
+    }
+    .arrows.right   {
+        
+         transform: rotateZ(180deg);
+
+    }
+    ul.carousal {
+        display: flex;
+        margin-bottom: 0;
+    }
+    ul.carousal li{
+        margin-right: 1em;
+        margin-bottom: 0;
+        padding: 2em;
+
+        
+    }
+}
+
+@media (min-width: 853px) {
+    body {
+        font-size: 20px;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    .subtitle {
+        font-size: 1.2em;
+    }
+    h2 {
+        text-align: left;
+        font-size: 2em;
+    }
+    .v-padding {
+        padding: 4em;
+    }
+
+    .light-purple-wrapper{
+        padding-bottom: 4em;
+    }
+    .move-up {
+        margin-top: -7em;
+    }
+}
+
+
+
+
+
+
+
+
+li9 {
+    position: relative;
+    text-align: left;
+    font-weight: bold;
+    font: italic small-caps bold 28px/44px Georgia, serif;
+
+
+    font-weight: bold;
+    font-size: 1.8em;
+
+    padding-left: 25px;
+    display: list-item;
+
+    
+}
+
+li9::before {
+    content: "  ";
+
+    position: absolute;
+    left: 0;
+    top: 22px;
+    height: 1px;
+    width: 20px;
+    border-bottom: 1px solid white;
+}
