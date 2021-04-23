@@ -100,7 +100,7 @@ li a {    /* home about speration */
 }
 .stats li {
     margin-bottom: 1.5em;
-}
+ }
 .stats li strong {
     font-size: 1.4em;
 }
@@ -276,4 +276,22 @@ li9::before {
     height: 1px;
     width: 20px;
     border-bottom: 1px solid white;
+}
+
+
+#pwn {
+    background-image: url('/image/bag.png');
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    width: 370px;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+@media screen and (max-width: 800px) {
+	#pwn {
+		display: none !important;
+	}
 }
