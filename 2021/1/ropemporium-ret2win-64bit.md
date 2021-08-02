@@ -14,7 +14,6 @@ https://github.com/aditya0x80/writeups/blob/main/ropemporium/ret2win.py
 - python - pwntool
 
 ####  This is a write-up on ropemprium's 64bit ret2win challenge. The challenge includes a straightforward ret2win binary file. 
-
 - Here we can see that `nx` is enabled so we cant inject a shellcode
 
 ```
@@ -27,7 +26,7 @@ https://github.com/aditya0x80/writeups/blob/main/ropemporium/ret2win.py
     PIE:      No PIE (0x400000)
 
 ```
-![8f3a87b3ae91ae35cfe56d0970c4f51d.png](/_resources/7657332b84044b328c9b317ab9445162.png)
+![8f3a87b3ae91ae35cfe56d0970c4f51d.png](_resources/7657332b84044b328c9b317ab9445162.png)
 
 
 - using `file` command we can see it is a not stripped ELF binary  
