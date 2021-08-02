@@ -1,10 +1,7 @@
-ropemporium-ret2win-64bit
-
 #weird-machines #rop-gadget 
 
 # ropemporium - ret2win 64bit
-https://github.com/aditya0x80/
-https://github.com/aditya0x80/writeups/blob/main/ropemporium/ret2win.py
+
 
  
 ## Tools
@@ -115,11 +112,11 @@ Symbol table '.symtab' contains 69 entries:
     67: 0000000000601058     0 OBJECT  GLOBAL HIDDEN    23 __TMC_END__
     68: 0000000000400528     0 FUNC    GLOBAL DEFAULT   11 _init
 ```
-==main function==
+### main function
 - -  on disassmble main we found that it calls pwnme function 
 ![df080bf8269a4f44a484583adef4a5b6](https://user-images.githubusercontent.com/69533371/127839101-f5a25c2b-0560-47c2-b6e2-05095f4c18f5.png)
 
-==pwnme function==
+### pwnme function
 
 - - We can clearly see a buffer overflow vulnerability in pwnme function.
 ![15725d49c91d4dd39ce69b2cea161be6](https://user-images.githubusercontent.com/69533371/127839159-c4b17710-c09c-466b-bf89-d3f58d0f5a39.png)
@@ -127,7 +124,9 @@ Symbol table '.symtab' contains 69 entries:
 
 # Exploit 
 ROP ATTACK
+
 GADGET - RET 
+
 We overflow a stack to force RIP to call a required function in order to obtain the flag. 
 
 
@@ -248,6 +247,14 @@ Well done! Here's your flag: ROPE{a_placeholder_32byte_flag!}
 ```
 
 
+Success!!!
 
-https://github.com/aditya0x80/writeups/blob/main/ropemporium/ret2win.py
-link to the challenge: https://ropemporium.com/challenge/ret2win.html
+#pwn0x80
+
+#### links- 
+
+[github](https://github.com/aditya0x80)
+
+[https://github.com/aditya0x80/writeups/blob/main/ropemporium/ret2win.py](https://github.com/aditya0x80/writeups/blob/main/ropemporium/ret2win.py)
+
+[link to the challenge](https://ropemporium.com/challenge/ret2win.html)
