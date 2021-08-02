@@ -26,7 +26,7 @@ https://github.com/aditya0x80/writeups/blob/main/ropemporium/ret2win.py
     PIE:      No PIE (0x400000)
 
 ```
-![8f3a87b3ae91ae35cfe56d0970c4f51d.png](_resources/7657332b84044b328c9b317ab9445162.png)
+![8f3a87b3ae91ae35cfe56d0970c4f51d](https://user-images.githubusercontent.com/69533371/127838908-f8b045fa-5a42-403f-9a8c-07ab154853aa.png)
 
 
 - using `file` command we can see it is a not stripped ELF binary  
@@ -117,12 +117,12 @@ Symbol table '.symtab' contains 69 entries:
 ```
 ==main function==
 - -  on disassmble main we found that it calls pwnme function 
-![59ec07d41a175d2d4fb7fc342ccdf5dd.png](/_resources/df080bf8269a4f44a484583adef4a5b6.png)
+![df080bf8269a4f44a484583adef4a5b6](https://user-images.githubusercontent.com/69533371/127839101-f5a25c2b-0560-47c2-b6e2-05095f4c18f5.png)
 
 ==pwnme function==
 
 - - We can clearly see a buffer overflow vulnerability in pwnme function.
-![d7c1488142ecdfee89738e0cd8fd40c6.png](/_resources/15725d49c91d4dd39ce69b2cea161be6.png)
+![15725d49c91d4dd39ce69b2cea161be6](https://user-images.githubusercontent.com/69533371/127839159-c4b17710-c09c-466b-bf89-d3f58d0f5a39.png)
 
 
 # Exploit 
@@ -195,11 +195,11 @@ References to pattern buffer found at:
 The offset is `40`
 
 The stack frame for this exploit should look like this. 
-![e177c09f9cd819b24273de17b1286d61.png](/_resources/35beef3276c1461b9bb34b3b7511b2e0.png)
+![35beef3276c1461b9bb34b3b7511b2e0](https://user-images.githubusercontent.com/69533371/127839225-bec4b51c-8c68-4475-8222-7303fb2951ba.png)
 
 
 Here's an refernce of a function call stack for your convenience. 
-![7596f28e1c76bc43f2a487df4a178abd.png](/_resources/286731686f3b40dcb942cbde848a61d7.png)
+![286731686f3b40dcb942cbde848a61d7](https://user-images.githubusercontent.com/69533371/127839253-bdda53a6-2015-43df-8320-567399262fe5.png)
 
 
 - Exploit source code written in python3 using pwntool 
