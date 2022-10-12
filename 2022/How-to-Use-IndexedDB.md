@@ -163,7 +163,8 @@ modeOption
 
 ### Example-
 
-https://github.com/pwn0x80/radio/blob/main/src/services/indexedDB.js
+[indexedDB example](https://github.com/pwn0x80/radio/blob/main/src/services/indexedDB.js)
+
 
 
 ```javascript
