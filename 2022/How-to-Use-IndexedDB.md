@@ -127,6 +127,7 @@ let pipe = (...functions) => (input) => func.reduce((next, func) =>
 
 - Always check for browser support before using the IndexedDB API. You never know which browser the user is using:
 ```javascript
+
 const indexedDB =
 
 window.indexedDB ||
@@ -154,6 +155,7 @@ option,
 modeOption
 
 )(indexedDB)  
+
 ```
 
 ### Example-
