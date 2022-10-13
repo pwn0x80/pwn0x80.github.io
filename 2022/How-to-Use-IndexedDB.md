@@ -63,6 +63,8 @@ const store = db.createObjectStore(Object_Store, { keyPath: “id” })
 ```
 
 - Thus, a generic database connection function might look like this:
+
+
 ```javascript
 let createIndexedDB = (indexedDB) => {
   return new Promise((resolve, reject) => {
@@ -144,7 +146,7 @@ window.shimIndexedDB;
 
 let globalstore = indexedDB == null ?
 
-console.log(“Broswer did not Support”)
+console.log(“browser does not support”)
 
 :
 
@@ -216,7 +218,7 @@ const indexedDB =
   window.msIndexedDB ||
   window.shimIndexedDB;
 let globalstore = indexedDB == null ?
-  console.log("broswer didnt support")
+  console.log("browser does not support")
   :
   pipe(
     createIndexDB,
